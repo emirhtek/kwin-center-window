@@ -135,8 +135,8 @@ App.shrink = function () { App.resizeFromCenter(-1); };
 
 App.main = function () {
   registerShortcut('toggle', 'kwin-center-window: Center / Restore Window', 'Meta+C', App.toggle);
-  registerShortcut('expand', 'kwin-center-window: Expand Center', 'Ctrl+Alt+J', App.expand);
-  registerShortcut('shrink', 'kwin-center-window: Shrink Center', 'Ctrl+Alt+K', App.shrink);
+  registerShortcut('expand', 'kwin-center-window: Expand Center', 'Ctrl+Alt+K', App.expand);
+  registerShortcut('shrink', 'kwin-center-window: Shrink Center', 'Ctrl+Alt+J', App.shrink);
 
   if (typeof options !== 'undefined' && options.configChanged) {
     options.configChanged.connect(App.loadConfig);
